@@ -13,7 +13,7 @@ class Anagram
       is_angram = false
       test_ar = word.split('').sort!
       anagram_ar = @word.split('').sort!
-      if test_ar.join('') == anagram_ar.join('')
+      puts if test_ar.join('') == anagram_ar.join('')
         is_angram ==true
       end
       if is_angram == true
