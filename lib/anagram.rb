@@ -17,8 +17,6 @@ class Anagram
       anagram_ar_new =anagram_ar.join('')
       if test_ar_new == anagram_ar_new
         is_angram ==true
-      end
-      if is_angram == true
         anagram_list << word
       end
     end
