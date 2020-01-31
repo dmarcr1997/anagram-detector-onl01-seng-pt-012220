@@ -14,9 +14,9 @@ class Anagram
       count = 0
       test_ar = word.split('')
       anagram_ar = @word.split('')
-      test_ar.sort!
-      anagram_ar.sort!
-      test_ar.each do |letter|
+      sorted_test =test_ar.sort!
+      sorted_anagram = anagram_ar.sort!
+      sorted_test.each do |letter|
         if letter == anagram_ar[count]
           if count == anagram_ar.length + 1
             is_angram = false
