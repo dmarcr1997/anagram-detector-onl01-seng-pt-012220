@@ -18,7 +18,6 @@ class Anagram
           is_angram << true
         else 
           is_angram << false
-          
         end
       end
       if is_angram.include?(false)
