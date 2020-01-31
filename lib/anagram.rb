@@ -10,9 +10,10 @@ class Anagram
   def match(list)
     is_angram = false
     anagram_list = []
+    anagram_ar = @word.split
     list.each do |word|
       test_ar = word.split
-      anagram_ar = @word.split
+      
       anagram_ar.each do |letter|
         if test_ar.include?(letter)
           is_angram = true
