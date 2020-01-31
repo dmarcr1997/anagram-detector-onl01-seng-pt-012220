@@ -8,23 +8,25 @@ class Anagram
   end
   
   def match(list)
-    is_angram = []
     anagram_list = []
     list.each do |word|
+      is_angram = false
+      count = 0
       test_ar = word.split('')
       anagram_ar = @word.split('')
-      anagram_ar.each do |letter|
-        if test_ar.include?(letter)
-          is_angram << true
-        else 
-          is_angram << false
+      test_ar.sort!
+      anagram_ar.sort!
+      test_ar.each do |letter|
+        if letter == anagram_ar[count]
+          is_angram = true
+          count +=1
+        else
+          is_angram = false
         end
       end
-      if is_angram.include?(false)
-        is_angram = []
-      else
+      if is_angram == true
         anagram_list << word
-        is_angram = []
+        count = 0
       end
     end
     anagram_list
