@@ -12,8 +12,8 @@ class Anagram
     list.each do |word|
       is_angram = false
       count = 0
-      test_ar = word.split('')
-      anagram_ar = @word.split('')
+      test_ar = word.split('').sort!
+      anagram_ar = @word.split('').sort!
       sorted_test = test_ar.sort!
       sorted_anagram = anagram_ar.sort!
       sorted_test.each do |letter|
