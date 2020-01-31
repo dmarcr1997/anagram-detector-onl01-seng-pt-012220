@@ -18,8 +18,12 @@ class Anagram
       anagram_ar.sort!
       test_ar.each do |letter|
         if letter == anagram_ar[count]
-          is_angram = true
-          count +=1
+          if count == anagram_ar.length + 1
+            is_angram = false
+          else
+            is_angram = true
+            count +=1
+          end
         else
           is_angram = false
         end
