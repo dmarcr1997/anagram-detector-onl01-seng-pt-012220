@@ -14,9 +14,7 @@ class Anagram
       count = 0
       test_ar = word.split('').sort!
       anagram_ar = @word.split('').sort!
-      test_ar.join('')
-      anagram_ar.join('')
-      if test_ar == anagram_ar
+      if test_ar.join('') == anagram_ar.join('')
         is_angram ==true
       end
       if is_angram == true
