@@ -11,7 +11,6 @@ class Anagram
     anagram_list = []
     list.each do |word|
       is_angram = false
-      count = 0
       test_ar = word.split('').sort!
       anagram_ar = @word.split('').sort!
       if test_ar.join('') == anagram_ar.join('')
@@ -19,7 +18,6 @@ class Anagram
       end
       if is_angram == true
         anagram_list << word
-        count = 0
       end
     end
     anagram_list
