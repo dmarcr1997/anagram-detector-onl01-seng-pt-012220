@@ -14,8 +14,7 @@ class Anagram
       count = 0
       test_ar = word.split('').sort!
       anagram_ar = @word.split('').sort!
-      test_ar.each do |letter|
-        if letter == anagram_ar[count]
+      if test_ar.join
           if count > anagram_ar.length
             is_angram = false
           else
