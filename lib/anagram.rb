@@ -24,7 +24,6 @@ class Anagram
         anagram_list << word
       end
     end
-    
-          
+    anagram_list
   end
 end
