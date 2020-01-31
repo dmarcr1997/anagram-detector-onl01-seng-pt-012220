@@ -21,9 +21,10 @@ class Anagram
         end
       end
       if is_angram.include?(false)
-        
+        is_angram = []
       else
         anagram_list << word
+        is_angram = []
       end
     end
     anagram_list
